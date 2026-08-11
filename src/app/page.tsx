@@ -68,25 +68,21 @@ export default function Home() {
           </div>
 
           {/* Right Visual */}
-          <div className="relative">
-            <div className="absolute -inset-6 rounded-3xl bg-blue-500/20 blur-3xl" />
+<div className="relative">
+  <div className="absolute -inset-6 rounded-3xl bg-blue-500/20 blur-3xl" />
 
-            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3 shadow-2xl">
-              <div className="flex aspect-[4/3] items-center justify-center rounded-2xl bg-slate-800">
-                <div className="text-center">
-                  <div className="text-6xl">🚕</div>
+  <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3 shadow-2xl">
+    <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+      <img
+        src="/hero-new.png"
+        alt="GangtokCab - Sikkim Taxi Service"
+        className="h-full w-full object-cover object-left"
+      />
 
-                  <p className="mt-4 text-lg font-semibold text-white">
-                    GangtokCab
-                  </p>
-
-                  <p className="mt-1 text-sm text-slate-400">
-                    Gangtok • Sikkim
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/40 to-transparent" />
+    </div>
+  </div>
+</div>
 
         </div>
       </section>

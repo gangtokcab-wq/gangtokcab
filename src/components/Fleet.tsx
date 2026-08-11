@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Fleet() {
   const vehicles = [
     {
@@ -6,7 +8,7 @@ export default function Fleet() {
       passengers: "1–3 Passengers",
       description:
         "A practical and spacious choice for couples, solo travellers and small families.",
-      icon: "🚕",
+      image: "/fleet/vehicles/wagonr.jpg",
     },
     {
       category: "Sedan",
@@ -14,7 +16,7 @@ export default function Fleet() {
       passengers: "1–4 Passengers",
       description:
         "A comfortable sedan option for airport transfers, sightseeing and city-to-city travel.",
-      icon: "🚘",
+      image: "/fleet/vehicles/swift-dzire.jpg",
     },
     {
       category: "Luxury SUV",
@@ -22,7 +24,7 @@ export default function Fleet() {
       passengers: "1–6 Passengers",
       description:
         "Spacious and comfortable vehicles suited for families, sightseeing and longer journeys.",
-      icon: "🚙",
+      image: "/fleet/vehicles/luxury-suv.jpg",
     },
     {
       category: "Premium Luxury",
@@ -30,7 +32,7 @@ export default function Fleet() {
       passengers: "1–6 Passengers",
       description:
         "A premium and refined travel experience for families, couples and longer journeys.",
-      icon: "⭐",
+      image: "/fleet/vehicles/innova-crysta.jpg",
     },
     {
       category: "Utility SUV",
@@ -38,7 +40,7 @@ export default function Fleet() {
       passengers: "1–7 Passengers",
       description:
         "Practical and dependable vehicles suitable for suitable routes and group travel.",
-      icon: "🚐",
+      image: "/fleet/vehicles/bolero-sumo.jpg",
     },
     {
       category: "Group Travel",
@@ -46,7 +48,7 @@ export default function Fleet() {
       passengers: "Group Travel",
       description:
         "A spacious option for families, friends and larger groups travelling together.",
-      icon: "🚌",
+      image: "/fleet/vehicles/tempo-traveller.jpg",
     },
     {
       category: "Group Transfers",
@@ -54,7 +56,7 @@ export default function Fleet() {
       passengers: "For Transfers Only",
       description:
         "Suitable for larger groups and organised transfer requirements.",
-      icon: "🚍",
+      image: "/fleet/vehicles/bus.jpg",
     },
   ];
 
@@ -100,15 +102,15 @@ export default function Fleet() {
               key={vehicle.vehicle}
               className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              {/* Single Vehicle Visual */}
-              <div className="flex h-48 items-center justify-center bg-slate-100">
-                <div className="text-center">
-                  <div className="text-6xl">{vehicle.icon}</div>
-
-                  <p className="mt-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-400">
-                    Vehicle Photo
-                  </p>
-                </div>
+              {/* Vehicle Image */}
+              <div className="relative h-48 overflow-hidden bg-slate-100">
+                <Image
+                  src={vehicle.image}
+                  alt={`${vehicle.vehicle} - GangtokCab`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                />
               </div>
 
               {/* Vehicle Information */}
@@ -133,7 +135,7 @@ export default function Fleet() {
           ))}
 
           {/* Others */}
-          <div className="flex min-h-[290px] flex-col justify-between rounded-2xl border-2 border-dashed border-blue-300 bg-blue-50/40 p-6 transition duration-300 hover:-translate-y-1 hover:bg-blue-50">
+          <div className="flex min-h-[290px] flex-col justify-between rounded-2xl border-2 border-dashed border-blue-300 bg-blue-50/90 p-6 transition duration-300 hover:-translate-y-1 hover:bg-blue-50">
             <div>
               <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white text-4xl shadow-sm">
                 ✨
