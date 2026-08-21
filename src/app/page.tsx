@@ -15,7 +15,9 @@ export default function Home() {
     pickup: "",
     destination: "",
     travelDate: "",
-    passengers: "",
+    adults: "",
+    children: "",
+    childAges: "",
     vehicle: "",
     tripType: "",
     requirement: "",
@@ -62,7 +64,9 @@ export default function Home() {
           pickup: "",
           destination: "",
           travelDate: "",
-          passengers: "",
+          adults: "",
+    children: "",
+    childAges: "",
           vehicle: "",
           tripType: "",
           requirement: "",
@@ -541,33 +545,80 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Passengers */}
+                {/* Adults */}
                 <div>
                   <label
-                    htmlFor="passengers"
+                    htmlFor="adults"
                     className="mb-2 block text-sm font-semibold text-slate-900"
                   >
-                    Passengers
+                    Adults
                   </label>
 
                   <select
-                    id="passengers"
-                    name="passengers"
-                    value={formData.passengers}
+                    id="adults"
+                    name="adults"
+                    value={formData.adults}
                     onChange={handleChange}
                     required
                     className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
                   >
-                    <option value="">Select passengers</option>
-                    <option value="1">1 Passenger</option>
-                    <option value="2">2 Passengers</option>
-                    <option value="3">3 Passengers</option>
-                    <option value="4">4 Passengers</option>
-                    <option value="5">5 Passengers</option>
-                    <option value="6">6 Passengers</option>
-                    <option value="7">7 Passengers</option>
-                    <option value="8+">8+ Passengers</option>
+                    <option value="">Select adults</option>
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
+                    <option value="6">6 Adults</option>
+                    <option value="7">7 Adults</option>
+                    <option value="8+">8+ Adults</option>
                   </select>
+                </div>
+
+                {/* Children */}
+                <div>
+                  <label
+                    htmlFor="children"
+                    className="mb-2 block text-sm font-semibold text-slate-900"
+                  >
+                    Children
+                  </label>
+
+                  <select
+                    id="children"
+                    name="children"
+                    value={formData.children}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                  >
+                    <option value="">Select children</option>
+                    <option value="0">0 Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                    <option value="3">3 Children</option>
+                    <option value="4">4 Children</option>
+                    <option value="5+">5+ Children</option>
+                  </select>
+                </div>
+
+                {/* Child Age(s) */}
+                <div>
+                  <label
+                    htmlFor="childAges"
+                    className="mb-2 block text-sm font-semibold text-slate-900"
+                  >
+                    Child Age(s)
+                  </label>
+
+                  <input
+                    id="childAges"
+                    name="childAges"
+                    type="text"
+                    value={formData.childAges}
+                    onChange={handleChange}
+                    placeholder="e.g. 4, 7"
+                    className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+                  />
                 </div>
 
                 {/* Vehicle */}
