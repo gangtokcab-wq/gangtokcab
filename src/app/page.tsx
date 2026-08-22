@@ -412,6 +412,143 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Tours Section */}
+      <section id="tours" className="bg-white px-6 py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">
+              Popular Tours
+            </p>
+
+            <h2 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">
+              Explore Sikkim & Darjeeling
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600">
+              Discover popular destinations across Sikkim and Darjeeling with
+              comfortable vehicles, experienced local drivers and flexible
+              private travel options.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-14 grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                Sikkim
+              </p>
+              <h3 className="mt-2 text-xl font-bold text-slate-900">
+                Gangtok Sightseeing
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Explore the highlights of Gangtok with a private taxi and a
+                local driver familiar with the city's popular attractions.
+              </p>
+              <a
+                href="#booking"
+                className="mt-6 inline-flex text-sm font-semibold text-blue-600 hover:text-blue-700"
+              >
+                Plan This Trip →
+              </a>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                Sikkim
+              </p>
+              <h3 className="mt-2 text-xl font-bold text-slate-900">
+                Tsomgo Lake & Nathula Pass
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Plan a comfortable day trip from Gangtok to Tsomgo Lake and
+                Nathula Pass, subject to local permits and route conditions.
+              </p>
+              <a
+                href="#booking"
+                className="mt-6 inline-flex text-sm font-semibold text-blue-600 hover:text-blue-700"
+              >
+                Plan This Trip →
+              </a>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                North Sikkim
+              </p>
+              <h3 className="mt-2 text-xl font-bold text-slate-900">
+                North Sikkim Tour
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Travel through the dramatic landscapes of North Sikkim with
+                suitable vehicles and experienced mountain-route drivers.
+              </p>
+              <a
+                href="#booking"
+                className="mt-6 inline-flex text-sm font-semibold text-blue-600 hover:text-blue-700"
+              >
+                Plan This Trip →
+              </a>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                Darjeeling
+              </p>
+              <h3 className="mt-2 text-xl font-bold text-slate-900">
+                Darjeeling Sightseeing
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Enjoy private taxi travel around Darjeeling and its popular
+                viewpoints and attractions.
+              </p>
+              <a
+                href="#booking"
+                className="mt-6 inline-flex text-sm font-semibold text-blue-600 hover:text-blue-700"
+              >
+                Plan This Trip →
+              </a>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                Sikkim
+              </p>
+              <h3 className="mt-2 text-xl font-bold text-slate-900">
+                Pelling & West Sikkim
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Explore West Sikkim with a private vehicle and build a journey
+                around your preferred destinations and travel dates.
+              </p>
+              <a
+                href="#booking"
+                className="mt-6 inline-flex text-sm font-semibold text-blue-600 hover:text-blue-700"
+              >
+                Plan This Trip →
+              </a>
+            </div>
+
+            <div className="rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50 p-7 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
+                Custom Tour
+              </p>
+              <h3 className="mt-2 text-xl font-bold text-slate-900">
+                Create Your Own Itinerary
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Tell us your destinations, travel dates and group size. Our
+                team can help you plan a suitable private taxi journey.
+              </p>
+              <a
+                href="#booking"
+                className="mt-6 inline-flex rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-700"
+              >
+                Request a Tour
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <WhyChooseUs />
 
