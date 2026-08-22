@@ -874,6 +874,111 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Contact Section */}
+      <section id="contact" className="bg-slate-950 px-6 py-24 text-white">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">
+              Contact
+            </p>
+
+            <h2 className="mt-3 text-4xl font-bold tracking-tight md:text-5xl">
+              Get in Touch With GangtokCab
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-300">
+              Have a question about your taxi, sightseeing plan or Sikkim
+              trip? Contact our team directly and we will be happy to help.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
+            {/* Primary Contact */}
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-7">
+              <p className="text-sm font-semibold uppercase tracking-wider text-blue-300">
+                Primary Contact
+              </p>
+
+              <h3 className="mt-3 text-2xl font-bold">
+                9871053259
+              </h3>
+
+              <p className="mt-2 text-sm leading-6 text-slate-300">
+                Calling & WhatsApp Business
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="tel:+919871053259"
+                  className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+                >
+                  Call Now
+                </a>
+
+                <a
+                  href="https://wa.me/919871053259"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+                >
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* Alternate Contact */}
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-7">
+              <p className="text-sm font-semibold uppercase tracking-wider text-blue-300">
+                Alternate Contact
+              </p>
+
+              <h3 className="mt-3 text-2xl font-bold">
+                7699052270
+              </h3>
+
+              <p className="mt-2 text-sm leading-6 text-slate-300">
+                Calling & WhatsApp
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="tel:+917699052270"
+                  className="rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+                >
+                  Call Now
+                </a>
+
+                <a
+                  href="https://wa.me/917699052270"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg border border-white/15 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+                >
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-auto mt-8 max-w-5xl rounded-2xl border border-blue-400/20 bg-blue-500/10 p-6 text-center">
+            <p className="text-sm font-semibold uppercase tracking-wider text-blue-300">
+              Service Area
+            </p>
+
+            <p className="mt-2 text-base text-slate-200">
+              Gangtok • Sikkim • Darjeeling • Bagdogra • NJP
+            </p>
+
+            <a
+              href="#booking"
+              className="mt-5 inline-flex rounded-lg bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100"
+            >
+              Plan Your Journey
+            </a>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }
